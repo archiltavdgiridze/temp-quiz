@@ -27,7 +27,10 @@ function displayQuiz(xmlDoc) {
     const questionDiv = document.createElement("div");
     questionDiv.innerHTML = `<strong> ${
       index + 1
-    } Question  (${questionType}):</strong> ${questionContent}`;
+    } კითხვა :</strong> ${questionContent}`;
+
+    // Add a 20px bottom margin to create a gap between questions
+    questionDiv.style.marginBottom = "5px";
 
     quizContainer.appendChild(questionDiv);
 

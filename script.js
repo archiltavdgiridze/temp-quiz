@@ -15,6 +15,7 @@ function loadXML() {
 function displayQuiz(xmlDoc) {
   const quizContainer = document.getElementById("quizContainer");
 
+  
   // Iterate through each question block
   const questionBlocks = xmlDoc.getElementsByTagName("QuestionBlock");
   Array.from(questionBlocks).forEach((questionBlock, index) => {

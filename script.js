@@ -44,13 +44,15 @@ function displayQuiz(xmlDoc) {
       // Create a div for the answer
       const answerDiv = document.createElement("div");
       answerDiv.innerHTML = `${
-        isCorrect ? "[Correct]" : "[Incorrect]"
+        isCorrect ? "[სწორია]" : "[არასწორია]"
       } ${answerContent}`;
 
       // Add light green background to correct answers
       if (isCorrect) {
         answerDiv.style.backgroundColor = "#c8e6c9"; // Light green color
         answerDiv.style.marginBottom = "3px"; // Light green color
+      } else {
+        answerDiv.style.backgroundColor = "#ffbebe"; // Light green color
       }
 
       quizContainer.appendChild(answerDiv);
